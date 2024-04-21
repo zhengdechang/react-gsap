@@ -197,3 +197,9 @@ html {
     --tw-text-opacity: 1;
     color: rgb(85 56 206/var(--tw-text-opacity));
 }
+
+.h-screen-s {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    height: 100svh;
+}
