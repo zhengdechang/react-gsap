@@ -174,44 +174,46 @@ const CTA = styled.button`
 
 const HeroSection = () => {
   return (
-    <HomeSection id="home">
-      <Blobs>
-        <PinkBlob>
-          <img src={pinkBlob} alt="" width="400" height="400" />{" "}
-        </PinkBlob>
-        <WhiteBlob>
-          <img src={whiteBlob} alt="" width="400" height="400" />
-        </WhiteBlob>
-        <PurpleBlob>
-          <img src={purpleBlob} alt="" width="400" height="400" />
-        </PurpleBlob>
-      </Blobs>
+    <div data-color="white">
+      <HomeSection id="home">
+        <Blobs>
+          <PinkBlob>
+            <img src={pinkBlob} alt="" width="400" height="400" />{" "}
+          </PinkBlob>
+          <WhiteBlob>
+            <img src={whiteBlob} alt="" width="400" height="400" />
+          </WhiteBlob>
+          <PurpleBlob>
+            <img src={purpleBlob} alt="" width="400" height="400" />
+          </PurpleBlob>
+        </Blobs>
 
-      <MainContent id="home">
-        <Lb id="leftBlock">
-          <Topic>
-            <Circle />
-            <span>We Build Web</span>
-          </Topic>
-          <Title>Transforming your digital presence</Title>
-          <SubText>
-            we help fast growing companies build award winning websites
-          </SubText>
-          <CTA>
-            Get in touch &nbsp;
-            <img src={arrow} alt="cta" width="100" height="100" />
-          </CTA>
-        </Lb>
+        <MainContent id="home">
+          <Lb id="leftBlock">
+            <Topic>
+              <Circle />
+              <span>We Build Web</span>
+            </Topic>
+            <Title>Transforming your digital presence</Title>
+            <SubText>
+              we help fast growing companies build award winning websites
+            </SubText>
+            <CTA>
+              Get in touch &nbsp;
+              <img src={arrow} alt="cta" width="100" height="100" />
+            </CTA>
+          </Lb>
 
-        <MobileSvg
-          src={Mobile}
-          alt="Mobile Svg"
-          srcSet=""
-          width="400"
-          height="400"
-        />
-      </MainContent>
-    </HomeSection>
+          <MobileSvg
+            src={Mobile}
+            alt="Mobile Svg"
+            srcSet=""
+            width="400"
+            height="400"
+          />
+        </MainContent>
+      </HomeSection>
+    </div>
   );
 };
 

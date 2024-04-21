@@ -6,6 +6,9 @@
     --white: #fff;
     --nav: #35353f;
     --nav2: #3f3d56;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --self_acronym:"self_acronym";
 }
 
 *,
@@ -67,4 +70,80 @@ img,
 svg {
     width: 100%;
     height: auto;
+}
+
+@font-face {
+    font-family: self_acronym;
+    src: local("Arial");
+    ascent-override: 107.47%;
+    descent-override: 27.46%;
+    line-gap-override: 0.00%;
+    size-adjust: 100.50%
+}
+
+
+
+.type-body-sm{
+        font-family: var(--self_acronym);
+            font-size: var(--size-body-sm);
+            line-height: 1.25;
+}
+
+:root {
+    --size-body-xxs: 0.75rem;
+    --size-body-xs: 0.75rem;
+    --size-body-sm: 1.125rem;
+    --size-body-md: 1.25rem;
+    --size-body-lg: 1.25rem;
+    --size-title-sm: 1.5rem;
+    --size-title-md: 2.375rem;
+    --size-title-lg: 2.5rem;
+    --size-title-xl: 2.875rem;
+    --size-title-2xl: 3.25rem;
+    --size-title-3xl: 3.25rem
+}
+
+@media (min-width: 768px) {
+    :root {
+        --size-body-xs: 0.875rem;
+        --size-body-md: 1.5rem;
+        --size-body-lg: 2rem;
+        --size-title-md: 2.75rem;
+        --size-title-lg: 4rem;
+        --size-title-xl: 4rem;
+        --size-title-2xl: 4.5rem;
+        --size-title-3xl: 5.5rem
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --size-body-sm: 1.125rem;
+        --size-body-md: 1.5rem;
+        --size-title-sm: 2rem;
+        --size-title-lg: 4rem;
+        --size-title-xl: 4.5rem;
+        --size-title-2xl: 5.5rem;
+        --size-title-3xl: 7rem
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        --size-title-lg: 4.625rem;
+        --size-title-xl: 5.5rem;
+        --size-title-2xl: 6.75rem;
+        --size-title-3xl: 9rem
+    }
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: var(--font-acronym);
+    font-feature-settings: normal;
+    font-variation-settings: normal
 }

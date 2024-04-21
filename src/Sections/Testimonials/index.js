@@ -79,7 +79,7 @@ const Testimonials = () => {
   };
 
   return (
-    <Section>
+    <Section data-color="blank">
       <Title>Few good words about us!</Title>
       <Carousal>
         <Slider {...settings}>
